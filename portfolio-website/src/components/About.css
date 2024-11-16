@@ -1,0 +1,10 @@
+.about {
+    padding: 50px;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}

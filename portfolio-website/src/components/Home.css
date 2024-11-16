@@ -1,0 +1,16 @@
+.home {
+    text-align: center;
+    padding: 50px;
+    background: #007bff;
+    color: white;
+}
+
+.scroll-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background: #0056b3;
+    text-decoration: none;
+    border-radius: 5px;
+}
