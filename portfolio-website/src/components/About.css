@@ -1,3 +1,4 @@
+/* General About Section */
 .about {
     padding: 60px 20px;
     background: linear-gradient(120deg, #f0f4ff, #e9ecef);
@@ -32,7 +33,69 @@
     color: #555;
 }
 
-.experience, .skills {
+/* About Grid Layout */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Experience and Education Section */
+.experience, .education {
+    background: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience:hover, .education:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.experience h3, .education h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #007bff;
+    position: relative;
+}
+
+.experience-item h4, .education-list li strong {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.experience-item ul, .education-list {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-item ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.experience-item ul li::before, .education-list li::before {
+    content: '✔️';
+    margin-right: 10px;
+    color: #28a745;
+}
+
+/* Skills Section */
+.skills {
     margin-top: 40px;
     text-align: left;
     max-width: 800px;
@@ -44,29 +107,10 @@
     padding: 20px;
 }
 
-.experience h3, .skills h3 {
+.skills h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
     color: #007bff;
-}
-
-.experience-item h4 {
-    font-size: 1.4rem;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.experience-item p {
-    margin: 0;
-    font-style: italic;
-    color: #666;
-}
-
-.experience-item ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    padding-left: 10px;
-    color: #444;
 }
 
 .skills-list {
@@ -91,38 +135,4 @@
 .skills-list li:hover {
     transform: scale(1.1);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.education {
-    margin-top: 40px;
-    text-align: left;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    background: #fff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.education h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #007bff;
-}
-
-.education-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.education-list li {
-    margin-bottom: 15px;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.education-list li strong {
-    color: #333;
-    font-size: 1.1rem;
 }

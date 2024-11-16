@@ -6,45 +6,53 @@ const About = () => {
         <section id="about" className="about">
             <h2>About Me</h2>
             <p>
-                Hi! I'm a passionate software developer who loves creating seamless, interactive, and user-friendly experiences. Known for solving complex problems, I enjoy collaborating with teams to build innovative and scalable solutions that make a difference.
+                Hi! I'm a passionate software developer who loves creating seamless, interactive, and user-friendly experiences. 
+                With a knack for solving complex problems, I enjoy collaborating with teams to build innovative and scalable solutions that make a difference.
             </p>
             <p>
-                I have hands-on experience in full-stack development, agile methodologies, and software testing. My journey has taught me to design and implement efficient and maintainable software solutions. During a six-month internship at Bank of Ceylon's Head Office, I honed my skills in UI/UX design and mobile application development using React Native. I stay driven by my curiosity to explore emerging technologies and my dedication to crafting products that stand out.
+                I have hands-on experience in full-stack development, agile methodologies, and software testing. 
+                During a six-month internship at Bank of Ceylon's Head Office, I honed my skills in UI/UX design and mobile application development using React Native. 
+                I stay driven by my curiosity to explore emerging technologies and my dedication to crafting products that stand out.
             </p>
 
-            <div className="experience">
-                <h3>Experience</h3>
-                <div className="experience-item">
-                    <h4>Software Developer Intern</h4>
-                    <p>Bank of Ceylon Head Office</p>
-                    <p>08/2023 - 02/2024 | Colombo</p>
-                    <ul>
-                        <li>Collaborated with teams to gather and refine project requirements.</li>
-                        <li>Designed engaging UI/UX prototypes for new applications.</li>
-                        <li>Developed a mobile application using React Native, enhancing functionality and user experience.</li>
+            <div className="about-grid">
+                {/* Experience Section */}
+                <div className="experience">
+                    <h3>Experience</h3>
+                    <div className="experience-item">
+                        <h4>Software Developer Intern</h4>
+                        <p>Bank of Ceylon Head Office</p>
+                        <p>08/2023 - 02/2024 | Colombo</p>
+                        <ul>
+                            <li>Collaborated with teams to gather and refine project requirements.</li>
+                            <li>Designed engaging UI/UX prototypes for new applications.</li>
+                            <li>Developed a mobile application using React Native, enhancing functionality and user experience.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                {/* Education Section */}
+                <div className="education">
+                    <h3>Education</h3>
+                    <ul className="education-list">
+                        <li>
+                            <strong>BSc (Hons) Degree in Information Technology</strong><br />
+                            Specialized in Information Technology<br />
+                            Sri Lanka Institute of Information Technology, Malabe (Undergraduate, 2020)
+                        </li>
+                        <li>
+                            <strong>GCE Advanced Level</strong><br />
+                            Sri Siddhartha Central College, 2018
+                        </li>
+                        <li>
+                            <strong>GCE Ordinary Level</strong><br />
+                            Sri Siddhartha Central College, 2015
+                        </li>
                     </ul>
                 </div>
             </div>
 
-            <div className="education">
-                <h3>Education</h3>
-                <ul className="education-list">
-                    <li>
-                        <strong>BSc (Hons) Degree in Information Technology</strong><br />
-                        Specialized in Information Technology<br />
-                        Sri Lanka Institute of Information Technology, Malabe (Undergraduate, 2020)
-                    </li>
-                    <li>
-                        <strong>GCE Advanced Level</strong><br />
-                        Sri Siddhartha Central College, 2018
-                    </li>
-                    <li>
-                        <strong>GCE Ordinary Level</strong><br />
-                        Sri Siddhartha Central College, 2015
-                    </li>
-                </ul>
-            </div>
-
+            {/* Skills Section */}
             <div className="skills">
                 <h3>Skills</h3>
                 <ul className="skills-list">
