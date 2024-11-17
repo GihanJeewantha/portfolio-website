@@ -48,50 +48,108 @@
     }
 }
 
-/* Experience and Education Section */
-.experience, .education {
+/* Experience Section */
+.experience {
     background: #fff;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     padding: 25px;
-    position: relative;
-    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.experience:hover, .education:hover {
+.experience:hover {
     transform: translateY(-5px);
     box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
 }
 
-.experience h3, .education h3 {
+.experience h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
     color: #007bff;
-    position: relative;
 }
 
-.experience-item h4, .education-list li strong {
-    font-size: 1.2rem;
-    color: #333;
-    font-weight: bold;
+.experience-item {
+    text-align: left;
 }
 
-.experience-item ul, .education-list {
-    list-style: none;
-    padding: 0;
-}
-
-.experience-item ul li {
-    display: flex;
-    align-items: center;
+.experience-item h4 {
+    font-size: 1.4rem;
+    color: #444;
     margin-bottom: 10px;
 }
 
-.experience-item ul li::before, .education-list li::before {
-    content: '✔️';
+.experience-item .company {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+}
+
+.experience-item .duration {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.experience-item ul {
+    padding: 0;
+    list-style: none;
+}
+
+.experience-item ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.experience-item ul li .icon {
+    color: #007bff;
     margin-right: 10px;
-    color: #28a745;
+}
+
+/* Education Section */
+.education {
+    background: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.education h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.education-list {
+    padding: 0;
+    list-style: none;
+}
+
+.education-list li {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.education-list h4 {
+    font-size: 1.4rem;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.education-list p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.education-list .institute {
+    font-size: 0.9rem;
+    color: #777;
 }
 
 /* Skills Section */

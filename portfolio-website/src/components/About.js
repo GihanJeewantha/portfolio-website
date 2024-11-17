@@ -21,12 +21,12 @@ const About = () => {
                     <h3>Experience</h3>
                     <div className="experience-item">
                         <h4>Software Developer Intern</h4>
-                        <p>Bank of Ceylon Head Office</p>
-                        <p>08/2023 - 02/2024 | Colombo</p>
+                        <p className="company">Bank of Ceylon Head Office</p>
+                        <p className="duration">08/2023 - 02/2024 | Colombo</p>
                         <ul>
-                            <li>Collaborated with teams to gather and refine project requirements.</li>
-                            <li>Designed engaging UI/UX prototypes for new applications.</li>
-                            <li>Developed a mobile application using React Native, enhancing functionality and user experience.</li>
+                            <li><span className="icon">✔</span> Collaborated with teams to gather and refine project requirements.</li>
+                            <li><span className="icon">✔</span> Designed engaging UI/UX prototypes for new applications.</li>
+                            <li><span className="icon">✔</span> Developed a mobile application using React Native, enhancing functionality and user experience.</li>
                         </ul>
                     </div>
                 </div>
@@ -36,17 +36,17 @@ const About = () => {
                     <h3>Education</h3>
                     <ul className="education-list">
                         <li>
-                            <strong>BSc (Hons) Degree in Information Technology</strong><br />
-                            Specialized in Information Technology<br />
-                            Sri Lanka Institute of Information Technology, Malabe (Undergraduate, 2020)
+                            <h4>BSc (Hons) Degree in Information Technology</h4>
+                            <p>Specialized in Information Technology</p>
+                            <p className="institute">Sri Lanka Institute of Information Technology, Malabe (Undergraduate, 2020)</p>
                         </li>
                         <li>
-                            <strong>GCE Advanced Level</strong><br />
-                            Sri Siddhartha Central College, 2018
+                            <h4>GCE Advanced Level</h4>
+                            <p className="institute">Sri Siddhartha Central College, 2018</p>
                         </li>
                         <li>
-                            <strong>GCE Ordinary Level</strong><br />
-                            Sri Siddhartha Central College, 2015
+                            <h4>GCE Ordinary Level</h4>
+                            <p className="institute">Sri Siddhartha Central College, 2015</p>
                         </li>
                     </ul>
                 </div>
