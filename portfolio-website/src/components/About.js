@@ -24,9 +24,9 @@ const About = () => {
                         <p className="company">Bank of Ceylon Head Office</p>
                         <p className="duration">08/2023 - 02/2024 | Colombo</p>
                         <ul>
-                            <li><span className="icon">✔</span> Collaborated with teams to gather and refine project requirements.</li>
-                            <li><span className="icon">✔</span> Designed engaging UI/UX prototypes for new applications.</li>
-                            <li><span className="icon">✔</span> Developed a mobile application using React Native, enhancing functionality and user experience.</li>
+                            <li>Collaborated with teams to gather and refine project requirements.</li>
+                            <li>Designed engaging UI/UX prototypes for new applications.</li>
+                            <li>Developed a mobile application using React Native, enhancing functionality and user experience.</li>
                         </ul>
                     </div>
                 </div>
@@ -37,7 +37,6 @@ const About = () => {
                     <ul className="education-list">
                         <li>
                             <h4>BSc (Hons) Degree in Information Technology</h4>
-                            <p>Specialized in Information Technology</p>
                             <p className="institute">Sri Lanka Institute of Information Technology, Malabe (Undergraduate, 2020)</p>
                         </li>
                         <li>
@@ -50,26 +49,41 @@ const About = () => {
                         </li>
                     </ul>
                 </div>
-            </div>
 
-            {/* Skills Section */}
-            <div className="skills">
-                <h3>Skills</h3>
-                <ul className="skills-list">
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>CSS</li>
-                    <li>SQL</li>
-                    <li>React.js</li>
-                    <li>React Native</li>
-                    <li>Spring Boot</li>
-                    <li>GitHub</li>
-                    <li>MySQL</li>
-                    <li>Android Studio</li>
-                    <li>IntelliJ IDE</li>
-                    <li>Eclipse</li>
-                </ul>
+                {/* Skills Section */}
+                <div className="skills">
+                    <h3>Skills</h3>
+                    <ul className="skills-list">
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>CSS</li>
+                        <li>SQL</li>
+                        <li>React.js</li>
+                        <li>React Native</li>
+                        <li>Spring Boot</li>
+                        <li>GitHub</li>
+                        <li>MySQL</li>
+                        <li>Android Studio</li>
+                        <li>IntelliJ IDE</li>
+                        <li>Eclipse</li>
+                    </ul>
+                </div>
+
+                {/* Certifications Section */}
+                <div className="certifications">
+                    <h3>Certifications</h3>
+                    <ul className="certifications-list">
+                        <li>
+                            <h4>Career Essentials in Software Development</h4>
+                            <p className="issuer">by Microsoft and LinkedIn</p>
+                        </li>
+                        <li>
+                            <h4>Introduction to Cybersecurity</h4>
+                            <p className="issuer">Issued by Cisco</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     );
