@@ -4,11 +4,11 @@ import './Contact.css';
 const Contact = () => {
     return (
         <section id="contact" className="contact">
-            <h2>Contact Me</h2>
-            <p className="contact-description">
-                Have a question or want to work together? Feel free to reach out!
-            </p>
-            <form>
+            <div className="contact-header">
+                <h2>Contact Me</h2>
+                <p>I'd love to hear from you! Fill out the form below, and I'll get back to you as soon as possible.</p>
+            </div>
+            <form className="contact-form">
                 <div className="form-group">
                     <input type="text" placeholder="Your Name" required />
                 </div>
